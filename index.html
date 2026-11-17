@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f6fb">
+    <meta name="description" content="Небольшой статический сайт для экспериментов с GitLab Pages.">
+    <title>Привет, Pages!</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="wordmark" href="./" aria-label="Pages Playground — главная">
+          <span class="wordmark-icon" aria-hidden="true">P</span>
+          <span>Pages Playground</span>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span id="theme-label">Тёмная тема</span>
+        </button>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow"><span class="status-dot"></span> Статический сайт · без сборки</p>
+        <h1 id="hero-title">Привет, <span>Pages!</span></h1>
+        <p class="hero-copy">
+          Маленькая стартовая страница, чтобы проверить публикацию сайта и поиграть
+          с GitLab Pages.
+        </p>
+        <a class="primary-link" href="#playground">
+          Попробовать интерактив <span aria-hidden="true">↓</span>
+        </a>
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      </section>
+
+      <section class="playground" id="playground" aria-labelledby="playground-title">
+        <div class="section-heading">
+          <p class="eyebrow">Небольшой эксперимент</p>
+          <h2 id="playground-title">Счётчик хороших публикаций</h2>
+          <p>Нажми на кнопку — это уже работает прямо в браузере.</p>
+        </div>
+
+        <div class="counter-card">
+          <div class="counter-copy">
+            <span class="counter-label">Успешных нажатий</span>
+            <output class="counter-value" id="click-count" aria-live="polite">0</output>
+          </div>
+          <button class="counter-button" id="count-button" type="button">
+            <span aria-hidden="true">＋</span> Добавить одно
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Собрано из HTML, CSS и щепотки JavaScript.</span>
+        <span class="footer-badge"><span class="status-dot"></span> Всё готово к публикации</span>
+      </footer>
+    </main>
+  </body>
+</html>
